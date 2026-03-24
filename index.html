@@ -1032,6 +1032,67 @@
     </section>
 
     <!-- =======================================
+         SLIDE 9f — SETTINGS: TOOLS & MCP
+         ======================================= -->
+    <section class="slide" data-slide="9f">
+        <span class="slide-number reveal">—</span>
+        <h2 class="reveal" style="font-size: clamp(1.8rem, 4vw, 3rem);">Настройки: Tools &amp; MCP</h2>
+        <div class="settings-layout reveal">
+            <img src="img/settings-tools-mcp.jpg" alt="Cursor Settings Tools MCP" class="settings-img">
+            <ul class="settings-notes">
+                <li><strong>Browser Automation</strong> — подключение к Browser Tab. Агент делает скриншоты и тестирует UI</li>
+                <li><strong>Show Localhost Links</strong> — автооткрытие localhost ссылок в браузерной вкладке Cursor</li>
+                <li><strong>Installed MCP Servers</strong> — список подключённых серверов с toggle on/off</li>
+                <li><strong>context7</strong> — актуальная документация библиотек (2 tools)</li>
+                <li><strong>firecrawl</strong> — скрейпинг веб-страниц (12 tools)</li>
+                <li><strong>sqlite-mcp</strong> — прямой доступ к БД (10 tools, 3 prompts, 2 resources)</li>
+                <li><strong>postgres-mcp</strong> — отключён, включается по необходимости</li>
+                <li><strong>+ New MCP Server</strong> — добавить свой сервер одной кнопкой</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =======================================
+         SLIDE 9g — SETTINGS: HOOKS
+         ======================================= -->
+    <section class="slide" data-slide="9g">
+        <span class="slide-number reveal">—</span>
+        <h2 class="reveal" style="font-size: clamp(1.8rem, 4vw, 3rem);">Настройки: Hooks</h2>
+        <div class="settings-layout reveal">
+            <img src="img/settings-hooks.jpg" alt="Cursor Settings Hooks" class="settings-img">
+            <ul class="settings-notes">
+                <li><strong>Configured Hooks (2)</strong> — sessionStart и afterFileEdit подключены</li>
+                <li><strong>sessionStart</strong> → auto-commit.sh — коммитит изменения при старте нового чата</li>
+                <li><strong>afterFileEdit</strong> → lint.sh — запускает линтер после каждой правки агента</li>
+                <li><strong>Execution Log</strong> — полная история срабатываний хуков с таймингами</li>
+                <li>afterFileEdit: 579-719ms — линтер успевает за полсекунды</li>
+                <li>sessionStart: 85-279ms — коммит почти мгновенный</li>
+                <li><strong>Open project config</strong> — прямой доступ к hooks.json для редактирования</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =======================================
+         SLIDE 9h — SETTINGS: INDEXING & DOCS
+         ======================================= -->
+    <section class="slide" data-slide="9h">
+        <span class="slide-number reveal">—</span>
+        <h2 class="reveal" style="font-size: clamp(1.8rem, 4vw, 3rem);">Настройки: Indexing &amp; Docs</h2>
+        <div class="settings-layout reveal">
+            <img src="img/settings-indexing-docs.jpg" alt="Cursor Settings Indexing Docs" class="settings-img">
+            <ul class="settings-notes">
+                <li><strong>Codebase Indexing: 100%</strong> — 107 файлов проиндексировано. Embeddings в облаке, код — локально</li>
+                <li><strong>Sync / Delete Index</strong> — принудительная переиндексация или сброс</li>
+                <li><strong>Index New Folders</strong> — автоиндексация новых папок (до 50K файлов)</li>
+                <li><strong>.cursorignore</strong> — Edit: исключения поверх .gitignore. Экономит токены!</li>
+                <li><strong>Instant Grep (Beta)</strong> — индексация для быстрого поиска. Данные хранятся локально</li>
+                <li><strong>Docs</strong> — подключённая документация: gotd, Dify. Используется через @Docs в чате</li>
+                <li><strong>+ Add Doc</strong> — добавить URL документации для индексации</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =======================================
          SLIDE 10 — LIVE DEMO: БЭКЕНД
          ======================================= -->
     <section class="slide center-slide" data-slide="10">
